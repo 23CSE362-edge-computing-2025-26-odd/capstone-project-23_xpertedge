@@ -1,0 +1,36 @@
+seed: 42
+
+# System
+bandwidth_MHz: 10            # total system bandwidth 
+subchannels_N: 3             # N parallel subchannels (OFDMA)
+noise_watt: 1.0e-6           # AWGN power N0 (W)
+
+# Path loss model (for channel gain)
+distance_m_range: [20, 100]  # uniform distance to BS
+pathloss_g0_dB: -35          # reference path gain (at d0)
+ref_distance_m: 2.0
+pathloss_exponent: 4.0
+
+# Compute model
+cpu_freq_GHz_range: [1.0, 9.0]
+cycles_per_sample: 20        # φ (CPU cycles per sample)
+local_epochs_E: 10
+
+# Tx power (client)
+tx_power_dBm_range: [-10, 20]
+
+# Training round control
+rounds_R: 10
+max_clients_per_round: 9     # total clients chosen this round (will be chunked into groups of size ≤ N)
+
+# Orchestrator behavior
+block_on_ml_updates: true
+ml_updates_timeout_sec: 3600
+poll_interval_sec: 2.0
+
+# IO directories
+dirs:
+  shared: outputs/shared
+  edge_rounds: outputs/edge/rounds
+  edge_logs: outputs/edge/logs
+  ml_rounds: outputs/ml/rounds
