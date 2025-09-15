@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader, Dataset
 import torchvision.transforms as T
 from datasets import load_dataset
 from tqdm import tqdm
-from dataset import FEMNISTDataset
+from Implementation.ci.src.dataset import FEMNISTDataset
 
 print("Loading FEMNIST dataset from HuggingFace...")
 ds = load_dataset("flwrlabs/femnist")

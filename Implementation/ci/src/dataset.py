@@ -16,3 +16,4 @@ class FEMNISTDataset(Dataset):
         if self.transform:
             img = self.transform(img)
         return img, label
+    
