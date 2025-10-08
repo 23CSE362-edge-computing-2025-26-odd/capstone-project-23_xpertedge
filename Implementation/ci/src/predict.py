@@ -35,3 +35,4 @@ def classify_images(model, image_dir, output_file, device):
             f.write(line + "\n")
 
     print(f"Results written to {output_file}")
+    return results

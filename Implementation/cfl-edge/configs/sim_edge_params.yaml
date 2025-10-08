@@ -24,7 +24,7 @@ rounds_R: 10
 max_clients_per_round: 9     # total clients chosen this round (will be chunked into groups of size ≤ N)
 
 # Orchestrator behavior
-block_on_ml_updates: true
+block_on_ml_updates: false
 ml_updates_timeout_sec: 3600
 poll_interval_sec: 2.0
 
