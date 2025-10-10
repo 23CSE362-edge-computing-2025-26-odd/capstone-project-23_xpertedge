@@ -1,0 +1,60 @@
+{
+  "round_id": 8,
+  "selected_clients": [
+    {
+      "id": "C87",
+      "cluster": "base_1_1"
+    },
+    {
+      "id": "C29",
+      "cluster": "base_0_1"
+    },
+    {
+      "id": "C04",
+      "cluster": "base_1_1"
+    },
+    {
+      "id": "C72",
+      "cluster": "base_0_0"
+    },
+    {
+      "id": "C10",
+      "cluster": "base_0_0"
+    },
+    {
+      "id": "C78",
+      "cluster": "base_1_1"
+    },
+    {
+      "id": "C02",
+      "cluster": "base_1_1"
+    },
+    {
+      "id": "C84",
+      "cluster": "base_1_0"
+    },
+    {
+      "id": "C83",
+      "cluster": "base_0_1"
+    }
+  ],
+  "aggregation_sets": [
+    [
+      "C87",
+      "C29",
+      "C04"
+    ],
+    [
+      "C72",
+      "C10",
+      "C78"
+    ],
+    [
+      "C02",
+      "C84",
+      "C83"
+    ]
+  ],
+  "subchannels_N": 3,
+  "deadline_sec": 16054.47430989136
+}

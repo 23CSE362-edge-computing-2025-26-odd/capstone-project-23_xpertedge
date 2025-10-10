@@ -28,9 +28,12 @@ block_on_ml_updates: false
 ml_updates_timeout_sec: 3600
 poll_interval_sec: 2.0
 
+
+# ... (all other settings remain the same)
+
 # IO directories
 dirs:
-  shared: outputs/shared
-  edge_rounds: outputs/edge/rounds
-  edge_logs: outputs/edge/logs
-  ml_rounds: outputs/ml/rounds
+  shared: ../outputs/shared
+  edge_rounds: ../outputs/edge/rounds
+  edge_logs: ../outputs/edge/logs
+  ml_rounds: ../outputs/ml/rounds
