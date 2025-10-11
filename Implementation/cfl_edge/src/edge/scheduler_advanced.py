@@ -1,6 +1,6 @@
 # FILE: src/edge/scheduler_advanced.py
 
-from _future_ import annotations
+from __future__ import annotations
 from typing import Dict, List
 import random
 from .clients import ClientProfile

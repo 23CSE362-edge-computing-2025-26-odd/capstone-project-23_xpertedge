@@ -3,19 +3,19 @@
   "selected_clients": [
     {
       "id": "C87",
-      "cluster": "base_1_1"
-    },
-    {
-      "id": "C29",
       "cluster": "base_0_1"
     },
     {
+      "id": "C29",
+      "cluster": "base_1_0"
+    },
+    {
       "id": "C04",
-      "cluster": "base_1_1"
+      "cluster": "base_1_0"
     },
     {
       "id": "C72",
-      "cluster": "base_0_0"
+      "cluster": "base_1_0"
     },
     {
       "id": "C10",
@@ -27,7 +27,7 @@
     },
     {
       "id": "C02",
-      "cluster": "base_1_1"
+      "cluster": "base_0_1"
     },
     {
       "id": "C84",
