@@ -3,11 +3,11 @@
   "selected_clients": [
     {
       "id": "C37",
-      "cluster": "base_0_1"
+      "cluster": "base_2_1"
     },
     {
       "id": "C54",
-      "cluster": "base_0_0"
+      "cluster": "base_1_1"
     },
     {
       "id": "C80",
@@ -15,23 +15,23 @@
     },
     {
       "id": "C48",
-      "cluster": "base_1_0"
+      "cluster": "base_2_0"
     },
     {
       "id": "C61",
-      "cluster": "base_1_0"
-    },
-    {
-      "id": "C76",
       "cluster": "base_0_0"
     },
     {
+      "id": "C76",
+      "cluster": "base_4_1"
+    },
+    {
       "id": "C62",
-      "cluster": "base_1_1"
+      "cluster": "base_2_1"
     },
     {
       "id": "C27",
-      "cluster": "base_1_0"
+      "cluster": "base_4_1"
     },
     {
       "id": "C46",

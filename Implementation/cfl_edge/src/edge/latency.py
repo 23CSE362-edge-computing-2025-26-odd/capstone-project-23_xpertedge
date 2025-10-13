@@ -12,10 +12,10 @@ def achievable_rate_bps(c: ClientProfile, allocated_bw_hz: float, noise_watt: fl
     snr = (c.tx_power_watt * c.channel_gain_lin) / max(noise_watt, 1e-30)
     # Achievable rate = Bandwidth × log(1 + SNR)
     result = allocated_bw_hz * math.log(1.0 + snr)
-    print(
+    """print(
         f"[FUNC achievable_rate_bps] cid={c.cid}, bw={allocated_bw_hz:.2e} Hz, "
         f"noise={noise_watt:.2e} W -> rate={result:.6e} bps"
-    )
+    )"""
     return result
 
 
@@ -23,10 +23,10 @@ def achievable_rate_bps(c: ClientProfile, allocated_bw_hz: float, noise_watt: fl
 def tx_time_sec(model_bytes: int, rate_bps: float) -> float:
     # Time = data size / rate (avoid divide by zero with small epsilon)
     result = float(model_bytes) / max(rate_bps, 1e-30)
-    print(
+    """print(
         f"[FUNC tx_time_sec] model_size={model_bytes} bytes, "
         f"rate={rate_bps:.6e} bps -> time={result:.6f} s"
-    )
+    )"""
     return result
 
 
@@ -34,11 +34,11 @@ def tx_time_sec(model_bytes: int, rate_bps: float) -> float:
 def compute_time_sec(E: int, cycles_per_sample: int, data_size: int, cpu_freq_hz: float) -> float:
     total_cycles = E * cycles_per_sample * data_size   # Total cycles needed
     result = total_cycles / max(cpu_freq_hz, 1e-30)    # Time = cycles / frequency
-    print(
+    """print(
         f"[FUNC compute_time_sec] E={E}, cycles/sample={cycles_per_sample}, "
         f"data_size={data_size}, cpu={cpu_freq_hz:.2e} Hz "
         f"-> time={result:.6f} s"
-    )
+    )"""
     return result
 
 
@@ -70,9 +70,9 @@ def estimate_times_for_selected(
         if ttot > max_deadline:                                   # Update if this client is the slowest
             max_deadline = ttot
 
-        print(
+        """print(
             f"[CLIENT {cid}] Tcmp={tcmp:.6f} s, Ttx={ttx:.6f} s, Ttot={ttot:.6f} s"
-        )
+        )"""
 
-    print(f"[FUNC estimate_times_for_selected] -> deadline={max_deadline:.6f} s")
+    """print(f"[FUNC estimate_times_for_selected] -> deadline={max_deadline:.6f} s")"""
     return out, max_deadline
